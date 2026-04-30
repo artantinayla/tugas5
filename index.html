@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastShop - Clean eCommerce</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header class="header">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo">FastShop</div>
+                <nav class="menu">
+                    <a href="#" class="active">Home</a>
+                    <a href="#features-apparel">Features & Apparel</a>
+                    <a href="#about-us">About Us</a>
+                    <a href="#blog">Blog</a>
+                </nav>
+            </div>
+
+            <div class="nav-right">
+                <div class="util-group">
+    <div class="dropdown util-dropdown">
+        <div class="util-item">
+            <img src="https://flagcdn.com/w20/gb.png" width="14" id="lang-flag"> 
+            <span class="current-lang">English</span> <i class="fa fa-chevron-down"></i>
+        </div>
+        <div class="dropdown-content mini-drop" id="lang-menu">
+            <a href="#" data-lang="Indonesia" data-flag="https://flagcdn.com/w20/id.png">
+                <img src="https://flagcdn.com/w20/id.png" width="14"> Indonesia
+            </a>
+            <a href="#" data-lang="Japanese" data-flag="https://flagcdn.com/w20/jp.png">
+                <img src="https://flagcdn.com/w20/jp.png" width="14"> Japanese
+            </a>
+        </div>
+    </div>
+
+    <div class="dropdown util-dropdown">
+        <div class="util-item">
+            <span class="current-curr">USD</span> <i class="fa fa-chevron-down"></i>
+        </div>
+        <div class="dropdown-content mini-drop" id="curr-menu">
+            <a href="#" data-curr="IDR">IDR - Rupiah</a>
+            <a href="#" data-curr="JPY">JPY - Yen</a>
+        </div>
+    </div>
+</div>
+</div>
+                <div class="cart-section">
+    <div class="cart-wrapper">
+        <i class="fa fa-shopping-basket"></i>
+        <span id="cart-count" class="cart-badge">0</span>
+    </div>
+    <div class="cart-info">
+        <span class="cart-label">Item(s)</span>
+        <span id="cart-total" class="cart-total-price">$0.00</span>
+    </div>
+</div>
+                <div class="search-container">
+    <input type="text" class="search-input" placeholder="Search products...">
+    <button class="search-btn">
+        <i class="fa fa-search"></i>
+    </button>
+</div>
+                <div class="user-menu">
+                    <div class="dropdown user-dropdown">
+    <a href="#" class="drop-btn">
+        <i class="fa fa-user-circle"></i> My Account <i class="fa fa-chevron-down"></i>
+    </a>
+    <div class="dropdown-content user-menu-box">
+        <div class="user-welcome">
+            <p>Welcome to FastShop</p>
+            <a href="#" class="btn-signin">Sign In / Register</a>
+        </div>
+        <hr>
+        <a href="#"><i class="fa fa-user"></i> My Profile</a>
+        <a href="#"><i class="fa fa-box"></i> My Orders</a>
+        <a href="#"><i class="fa fa-heart"></i> Wishlist</a>
+        <a href="#"><i class="fa fa-cog"></i> Settings</a>
+    </div>
+</div>
+
+                    <a href="#">Daily Deals</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Discover ethnically<br>cultivated and Fair-Trade gifts</h1>
+                <button class="btn-shop">SHOP NOW</button>
+            </div>
+            <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1600&q=80" alt="FastShop Models">
+            </div>
+            
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-bar">
+    <div class="features-container">
+        <div class="feature-item">
+            <div class="feature-icon">
+                <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="feature-text">
+                <h3>Free Shipping US</h3>
+                <p>On all order over $250</p>
+            </div>
+        </div>
+
+        <div class="feature-item">
+            <div class="feature-icon">
+                <i class="fa-solid fa-arrows-rotate"></i>
+            </div>
+            <div class="feature-text">
+                <h3>Money Guarantee</h3>
+                <p>30 days money back</p>
+            </div>
+        </div>
+
+        <div class="feature-item">
+            <div class="feature-icon">
+                <i class="fa-solid fa-credit-card"></i>
+            </div>
+            <div class="feature-text">
+                <h3>Payment Secured</h3>
+                <p>Secure all your payments</p>
+            </div>
+        </div>
+
+        <div class="feature-item">
+            <div class="feature-icon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+            <div class="feature-text">
+                <h3>Power Support</h3>
+                <p>Online support 24/7</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-static" id="about-us">
+    <div class="custom-container">
+        <div class="about-flex-row">
+            
+            <div class="about-img-box">
+                <img src="asset/foto1.avif" alt="Our Store Experience">
+                <div class="stat-card">
+                    <h3>10+</h3>
+                    <p>Years of Excellence</p>
+                </div>
+            </div>
+
+            <div class="about-text-box">
+                <span class="label-small">OUR STORY</span>
+                <h2 class="title-large">Uncompromising Quality, <br>Timeless Elegance</h2>
+                <p class="description">
+                    We believe that every piece of fashion tells a unique story. Since 2016, our mission has been to provide premium collections that blend modern sophistication with everyday comfort, empowering you to express your true self through style.
+                </p>
+                
+                <div class="about-points">
+                    <div class="point-item">
+                        <i class="fa fa-gem"></i>
+                        <span>Premium Materials</span>
+                    </div>
+                    <div class="point-item">
+                        <i class="fa fa-shipping-fast"></i>
+                        <span>Express Delivery</span>
+                    </div>
+                    <div class="point-item">
+                        <i class="fa fa-heart"></i>
+                        <span>Ethical Fashion</span>
+                    </div>
+                    <div class="point-item">
+                        <i class="fa fa-user-shield"></i>
+                        <span>Secure Shopping</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="products-section" id="features-apparel">
+    <div class="container">
+        <h2 class="section-title">Trending Products</h2>
+        
+        <div class="filter-container ">
+    <div class="filter-tabs">
+        <button class="tab-btn" onclick="renderProducts('mens', this) ">FASHION MEN'S</button>
+        <button class="tab-btn" onclick="renderProducts('womens', this)">FASHION WOMEN'S</button>
+        <button class="tab-btn" onclick="renderProducts('handbags', this)">HANDBAGS</button>
+        <button class="tab-btn" onclick="renderProducts('accessories', this)">ACCESSORIES</button>
+        <button class="tab-btn view-all" onclick="renderProducts('all', this)">VIEW ALL ></button>
+    </div>
+</div>
+
+        <div class="product-grid" id="product-container">
+    </div>
+</section>
+
+<section class="best-seller-area">
+    <div class="custom-container">
+        <div class="section-header">
+            <h2 class="main-title">Best Seller Products</h2>
+            <div class="nav-arrows">
+                <i class="fa fa-chevron-left"></i>
+                <i class="fa fa-chevron-right"></i>
+            </div>
+        </div>
+
+       <div class="product-grid">
+            
+            <div class="item-card">
+                <div class="tag-badge new">NEW</div>
+                <div class="product-thumb">
+                    <img src="asset/hoodie.jpg" alt="Apparel 1">
+                </div>
+                <div class="product-info">
+                    <h3>Urban Street Hoodie</h3>
+                    <div class="info-bottom">
+                        <span class="price">$65.00</span>
+                        <button class="add-cart"><i class="fa fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <div class="tag-badge sale">SALE</div>
+                <div class="product-thumb">
+                    <img src="asset/pakaian.jpg" alt="Apparel 2">
+                </div>
+                <div class="product-info">
+                    <h3>Summer Casual Shirt</h3>
+                    <div class="info-bottom">
+                        <span class="price">$45.00</span>
+                        <button class="add-cart"><i class="fa fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <div class="tag-badge new">NEW</div>
+                <div class="product-thumb">
+                    <img src="asset/baju1.jpg" alt="Apparel 3">
+                </div>
+                <div class="product-info">
+                    <h3>Classic Cotton Tee</h3>
+                    <div class="info-bottom">
+                        <span class="price">$25.00</span>
+                        <button class="add-cart"><i class="fa fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <div class="tag-badge sale">SALE</div>
+                <div class="product-thumb">
+                    <img src="asset/jaket.webp" alt="Apparel 4">
+                </div>
+                <div class="product-info">
+                    <h3>Denim Slim Jacket</h3>
+                    <div class="info-bottom">
+                        <span class="price">$89.00</span>
+                        <button class="add-cart"><i class="fa fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section class="promo-banner">
+    <div class="banner-container">
+        <div class="banner-shape shape-1"></div>
+        <div class="banner-shape shape-2"></div>
+        
+        <div class="banner-text-content">
+            <h4 class="banner-sub-title">FASHION DOESN'T LEAD IT FOLLOWS</h4>
+            <h1 class="banner-main-title">30% OFF</h1>
+            <p class="banner-description">ON PREMIUM SHIRTS</p>
+            <a href="#" class="banner-btn">SHOP NOW</a>
+        </div>
+
+        <div class="banner-visual">
+            <div class="beach-decor">
+                <i class="fa-solid fa-chair decor-item chair-1"></i>
+                <i class="fa-solid fa-table decor-item table-1"></i>
+                <i class="fa-solid fa-umbrella decor-item umbrella-1"></i>
+                <i class="fa-solid fa-chair decor-item chair-2"></i>
+            </div>
+            
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=600" alt="Fashion Model" class="model-img">
+        </div>
+    </div>
+</section>
+
+<section class="arrivals-area">
+    <div class="custom-container">
+        <h2 class="main-title">New Arrivals Products</h2>
+        
+        <div class="arrivals-grid">
+            
+            <div class="item-card">
+                <div class="tag-badge new">New</div>
+                <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=400" alt="COCO Chanel Perfume" class="item-img">
+                <h3 class="item-name">Simple Modern Canvas Handbag</h3>
+                <div class="item-footer">
+                    <span class="item-price">$75.00</span>
+                    <div class="item-rating">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        <span class="item-reviews">(3 Reviews)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <div class="tag-badge sale">Sale</div>
+                <img src="https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=400" alt="Brown Leather Shoes" class="item-img">
+                <h3 class="item-name">New Luxury Handmade Bag</h3>
+                <div class="item-footer">
+                    <span class="item-price">$75.00</span>
+                    <div class="item-rating">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        <span class="item-reviews">(3 Reviews)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="asset/sepatu.jpg" alt="Black Classic Shoes" class="item-img">
+                <h3 class="item-name">Top World Classic Italian Shoes</h3>
+                <div class="item-footer">
+                    <span class="item-price">$75.00</span>
+                    <div class="item-rating">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        <span class="item-reviews">(3 Reviews)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="asset/parfum.avif" alt="Pink Fragrance" class="item-img">
+                <h3 class="item-name">French Perfume Men New Arrival</h3>
+                <div class="item-footer">
+                    <span class="item-price">$75.00</span>
+                    <div class="item-rating">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        <span class="item-reviews">(3 Reviews)</span>
+                    </div>
+                </div>
+            </div>
+
+        </div> </div>
+</section>
+
+<section class="testimonial-section">
+    <div class="custom-container">
+        <h2 class="main-title">What Our Clients Say</h2>
+        
+        <div class="testimonial-grid">
+            <div class="testi-card">
+                <div class="testi-header">
+                    <img src="https://i.pravatar.cc/100?img=32" alt="Client" class="client-thumb">
+                    <div class="client-meta">
+                        <h4>Sophia Reynolds</h4>
+                        <span class="client-status">Verified Buyer</span>
+                    </div>
+                    <div class="quote-mark"><i class="fa fa-quote-right"></i></div>
+                </div>
+                <div class="user-rating">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+                <p class="testi-text">"The attention to detail is remarkable. I've purchased several handbags from different luxury sites, but the quality and authenticity here are unmatched. Truly a premium experience!"</p>
+            </div>
+
+            <div class="testi-card">
+                <div class="testi-header">
+                    <img src="https://i.pravatar.cc/100?img=12" alt="Client" class="client-thumb">
+                    <div class="client-meta">
+                        <h4>James Harrison</h4>
+                        <span class="client-status">Verified Buyer</span>
+                    </div>
+                    <div class="quote-mark"><i class="fa fa-quote-right"></i></div>
+                </div>
+                <div class="user-rating">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+                <p class="testi-text">"Outstanding service! The fragrance arrived in perfect condition and the scent is 100% authentic. It's rare to find such a reliable source for high-end fashion online."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <section class="brand-section">
+    <div class="custom-container">
+        <h2 class="sub-title-gray">Brand & Clients</h2>
+        <p class="brand-desc">We curate only the finest global labels to ensure you receive premium quality, timeless style, and authentic craftsmanship in every piece.</p>
+        <div class="brand-grid">
+            <div class="brand-item"><img src="asset/chanel.png" alt="Chanel"></div>
+            <div class="brand-item"><img src="asset/kenzo.png" alt="Kenzo"></div>
+            <div class="brand-item"><img src="asset/gucci.png" alt="Gucci"></div>
+            <div class="brand-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Prada-Logo.svg/1280px-Prada-Logo.svg.png" alt="Prada"></div>
+            <div class="brand-item"><img src="asset/moschino.png" alt="Moschino"></div>
+            <div class="brand-item"><img src="asset/guess.png" alt="Guess"></div>
+        </div>
+    </div>
+</section>
+
+
+<section class="blog-section " id="blog">
+    <div class="custom-container">
+        <div class="section-header">
+            <h2 class="main-title">From Our Blog</h2>
+            <div class="nav-arrows">
+                <i class="fa fa-chevron-left"></i>
+                <i class="fa fa-chevron-right"></i>
+            </div>
+        </div>
+
+        <div class="blog-main-wrapper">
+            <div class="blog-item-fixed">
+                <div class="blog-image">
+                    <img src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?w=400" alt="Blog 1">
+                </div>
+                <div class="blog-details">
+                    <div class="date-badge">
+                        <span class="day">22</span>
+                        <span class="month">Dec</span>
+                    </div>
+                    <div class="text-content">
+                        <h3>We're the best designers from UK</h3>
+                        <p class="meta-info">23 Dec 2018 | <i class="fa fa-comments"></i> 25 Comments</p>
+                        <p class="summary">Lorem ipsum dolor sit amet, consectetur Maecenas at rhoncus sapien [...]</p>
+                        <a href="#" class="read-more-btn">Read more <i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-item-fixed">
+                <div class="blog-image">
+                    <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400" alt="Blog 2">
+                </div>
+                <div class="blog-details">
+                    <div class="date-badge">
+                        <span class="day">26</span>
+                        <span class="month">Dec</span>
+                    </div>
+                    <div class="text-content">
+                        <h3>We're the best designers from UK</h3>
+                        <p class="meta-info">23 Dec 2018 | <i class="fa fa-comments"></i> 25 Comments</p>
+                        <p class="summary">Lorem ipsum dolor sit amet, consectetur Maecenas at rhoncus sapien [...]</p>
+                        <a href="#" class="read-more-btn">Read more <i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="footer-top">
+        <div class="custom-container footer-flex">
+            <div class="social-box">
+                <span class="label-text">GET IN TOUCH !</span>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="rss-active"><i class="fas fa-rss"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </div>
+            <div class="newsletter-box">
+                <span class="label-text">OUR NEWSLETTER</span>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-main">
+        <div class="custom-container footer-grid">
+            <div class="footer-col brand-info">
+                <h2 class="footer-logo">FastShop</h2>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul class="contact-list">
+                    <li><i class="fas fa-map-marker-alt"></i> 218 Fifth Avenue, 34th floor, Heaven Tower New York City</li>
+                    <li><i class="fas fa-phone-alt"></i> +88 123 456 7890</li>
+                    <li><i class="fas fa-envelope"></i> Support@Website.com</li>
+                    <li>Hot-Support@Website.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Stores</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Jobs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Our Service</h4>
+                <ul>
+                    <li><a href="#">Delivery Information</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Product Returns</a></li>
+                    <li><a href="#">Affiliate Account</a></li>
+                    <li><a href="#">F.A.Q</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>My Account</h4>
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Order History</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">Newsletter Subscription</a></li>
+                    <li><a href="#">Transactions</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="custom-container footer-flex">
+            <div class="copyright-text">
+                <p>About Us | Customer Service | Privacy Policy | Site Map | Search Terms | Advanced Search | Contact Us</p>
+                <p>Copyright 2017 © FastShop Powered by Kulathemes.</p>
+            </div>
+            <div class="payment-methods">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="pay-logo">
+    <img src="asset/visa.jpg" alt="Visa" class="pay-logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" class="pay-logo">
+    <img src="asset/maestro.jpg" alt="Maestro" class="pay-logo">
+    <img src="asset/discover.jpg" alt="Discover" class="pay-logo">
+</div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
